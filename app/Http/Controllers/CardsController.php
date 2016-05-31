@@ -15,8 +15,7 @@ class CardsController extends Controller
     }
 
     public function show($card) {
-        return $card;
-//        $cards = Card::all();
-//        return view('cards.index', compact('cards'));
+        $cards = Card::find($card);
+        return view('cards.show', compact('cards'));
     }
 }
