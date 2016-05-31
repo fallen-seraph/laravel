@@ -10,7 +10,7 @@ use App\Http\Requests;
 class CardsController extends Controller
 {
     public function index() {
-        $cards Card::all();
+        $cards = Card::all();
         return view('cards.index', compact('cards'));
     }
 }
