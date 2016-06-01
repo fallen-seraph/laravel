@@ -2,6 +2,6 @@
 
 @section('content')
         <h1>
-            {{ $cards->title }}
+            {{ $card->title }}
         </h1>
 @stop
