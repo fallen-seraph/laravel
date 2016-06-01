@@ -1,13 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>cards</title>
-    @yield('header')
-</head>
-<body>
-@yield('content')
+@extends('layout')
 
-@yield('footer')
-</div>
-</body>
-</html>
+@section('content')
+        <h1>
+            {{ $card->title }}
+        </h1>
+@stop
