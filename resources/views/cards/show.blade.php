@@ -12,4 +12,13 @@
                 </li>
             @endforeach
         </ul>
+
+        <h3>
+            Add a New Note
+        </h3>
+
+        <form method="POST" action="/cards/{{ $card->id }}/notes">
+            <textarea name="body"></textarea>
+            <button type="submit">Add Note</button>
+        </form>
 @stop
