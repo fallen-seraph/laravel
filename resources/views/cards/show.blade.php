@@ -8,7 +8,7 @@
         <ul>
             @foreach ($card->notes as $note)
                 <li>
-                    {{ $note->body }}
+                    <a href="/cards/{{ $card->id }}">{{ $note->body }}</a>
                 </li>
             @endforeach
         </ul>
