@@ -8,7 +8,7 @@ use App\Http\Requests;
 
 class NotesController extends Controller
 {
-    public function store(Request $request){
+    public function addNote(Request $request){
         return $request->all();
     }
 }
