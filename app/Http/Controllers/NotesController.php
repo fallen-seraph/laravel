@@ -26,7 +26,7 @@ class NotesController extends Controller
     }
 
     public function update(Request $request, Note $note){
-        $card->notes()->update([
+        $note->update([
             'body' => $request->body
         ]);
         return back();
