@@ -1,6 +1,6 @@
-@extends('layout');
+@extends('layout')
 
-@section('content');
+@section('content')
     <h1>Edit Note</h1>
 
     <form method="POST" action="">
