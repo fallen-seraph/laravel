@@ -24,4 +24,11 @@ class NotesController extends Controller
     public function edit(Note $note){
         return view('notes.edit', compact('note'));
     }
+
+    public function update(Request $request, Note $note){
+        $card->notes()->update([
+            'body' => $request->body
+        ]);
+        return back();
+    }
 }
