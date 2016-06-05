@@ -9,6 +9,7 @@
             @foreach ($card->notes as $note)
                 <li>
                     {{ $note->body }}
+                    <a href="/notes/{{ $note->id }}/edit">edit</a>
                 </li>
             @endforeach
         </ul>
