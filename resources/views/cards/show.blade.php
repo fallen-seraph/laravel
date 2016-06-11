@@ -20,10 +20,15 @@
         </h3>
 
         <form method="POST" action="/cards/{{ $card->id }}/notes">
-            <input type="hidden" name="_token" value="{{ csrf_token() }}">
+            {{ csrf_field() }}
             <textarea name="body"></textarea>
             <button type="submit">Add Note</button>
         </form>
-
-        {{ var_dump($errors) }}
+        @if (count($errors))
+            <ul>
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        @endif
 @stop
