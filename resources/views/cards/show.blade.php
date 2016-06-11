@@ -24,4 +24,6 @@
             <textarea name="body"></textarea>
             <button type="submit">Add Note</button>
         </form>
+
+        {{ var_dump($errors) }}
 @stop
