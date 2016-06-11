@@ -9,14 +9,17 @@ use App\Http\Requests;
 
 class NotesController extends Controller
 {
-    public function addNote(Request $request, Card $card){
+    public function store(Request $request, Card $card){
 //        $note = new Note;
 //        $note->body = $request->body;
 //        $card->notes()->save($note);
 
-        $card->notes()->create([
-            'body' => $request->body
-        ]);
+//        $card->notes()->create([
+//            'body' => $request->body
+//        ]);
+
+        $note = new Note($request->all());
+        $card->addNote($note, 1);
 
         return back();
     }
