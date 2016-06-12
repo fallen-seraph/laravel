@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="47510b47-7546-435d-8c38-34e706e7c7fb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/notes/edit.blade.php" afterPath="$PROJECT_DIR$/resources/views/notes/edit.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/cards/show.blade.php" afterPath="$PROJECT_DIR$/resources/views/cards/show.blade.php" />
-    </list>
+    <list default="true" id="47510b47-7546-435d-8c38-34e706e7c7fb" name="Default" comment="" />
     <ignored path="laravel.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
